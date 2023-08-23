@@ -18,9 +18,8 @@ int64_t length = sizeof(rawData);
 
 int main()
 {
+    //C++
     {
-        //C++
-        
         //start service
         XService::Initialize();
 
@@ -82,9 +81,8 @@ int main()
         XService::UnInitialize();
     }
 
+    //C API
     {
-        //C API
-
         //start service
         decrypt_service_initialize();
 
@@ -146,5 +144,6 @@ int main()
         //stop service
         decrypt_service_deinitialize();
     }
+    
     getchar();
 }
